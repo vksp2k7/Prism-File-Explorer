@@ -110,6 +110,7 @@ jobs:
             --version "${{ steps.version.outputs.version }}" \
             --out release-notes.md
         env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
           AI_NOTES: ${{ github.event.inputs.ai_notes }}
           RELEASE_NOTES_MODEL: ${{ vars.RELEASE_NOTES_MODEL }}
