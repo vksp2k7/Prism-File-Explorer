@@ -31,9 +31,9 @@ TAG_RE = re.compile(r"^v\d+\.\d+(?:\.\d+)?$")
 VERSION_RE = re.compile(r"^v?(\d+)\.(\d+)(?:\.(\d+))?$")
 REF_RE = re.compile(r"(?<![\w/])(?:([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+))?#(\d{1,5})\b")
 
-GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+GROQ_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 # GPT-OSS 20B is available on Groq's free tier and supports JSON responses.
-DEFAULT_MODEL = "openai/gpt-oss-20b"
+DEFAULT_MODEL = "gemini-3.6-flash"
 
 # Section order + emoji, matching the v2.5 reference release.
 CATEGORIES = {
